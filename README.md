@@ -2,11 +2,11 @@
 
 **Author**: Steeve Huang (@khshuang, [khhuang3@illinois.edu](mailto:khhuang3@illinois.edu)).
 
-## Abstract (not finalized)
+## Abstract
 
-We aim to reduce the factual inconsistency problem faced by text generation model. Specifically, we are interested in addressing the "missing information" challenge in abstractive summarization for dialogue. 
+Missing information is a common issue of dialogue summarization where some information in the reference summaries is not covered in the generated summaries. To address this issue, we propose to utilize natural language inference (NLI) models to improve coverage while avoiding introducing factual inconsistencies. Specifically, we use NLI to compute fine-grained training signals to encourage the model to generate content in the reference summaries that have not been covered, as well as to distinguish between factually consistent and inconsistent generated sentences. Experiments on the DIALOG-
+SUM and SAMSUM datasets confirm the effectiveness of the proposed approach in mitigating missing information, validated with automatic metrics and human judgments. Additionally, we compute the correlation between commonly used automatic metrics with human judgments in terms of three different dimensions regarding coverage and factual consistency to provide insight into the most suitable metric for evaluating dialogues summaries.
 
-While prior work has achieved improvements on other categories of factual inconsistency errors, such as modality error and object error, missing information has remained unsolved. In this work, we aim to address this issue by providing finer-grainer training signals to the generators in addition to maximum likelihood estimation.
 
 ## Dependencies
 First, create a virtual environment and install depednencies specified in requirements.txt

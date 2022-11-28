@@ -20,7 +20,7 @@ pip install -r requirements.txt
 Then, create separate enviroments for BARTScore and FactCC, following the [BARTScore instruction](https://github.com/neulab/BARTScore) and [FactCC instruction](https://github.com/salesforce/factCC).
 
 ## Data
-The preprocessed data can be downloaded from [here](https://s3.console.aws.amazon.com/s3/upload/khshuang-intern-data?region=us-west-2) (`dialogsum.zip` and `samsum.zip`). Please create a `data` folder and unzip these two files into this folder.
+Please create a `data` folder and unzip these two files into this folder. 
 
 
 ## Training
@@ -55,7 +55,7 @@ Training parameters are specified in `args.py`. You can specify each the value o
 --do_factcc_uncovered: (Deprecated) Not used in the final version.
 ```
 
-The trained checkpoints can be found in [here](https://s3.console.aws.amazon.com/s3/buckets/khshuang-intern-data?region=us-west-2&tab=objects) (`*_checkpoint_best.zip`) for reproduction purposes.
+The trained checkpoints can be found in internal repository for reproduction purposes.
 
 
 ## Evaluation
@@ -72,10 +72,5 @@ If you already have outputs generated (e.g. our training script would produce a 
 python test_file.py --dataset samsum --output_file $PATH_TO_OUTOUT/test_pred.json
 ```
 
-
-If there is any issue, please contact 
-## References
-
-- [Pre-approval ticket](https://issues.amazon.com/issues/SCIPUB1a-791)
 
 

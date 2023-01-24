@@ -1,4 +1,4 @@
-# Mitigating Missing Information for Dialogue Summarization
+# SWING 🏌️: Mitigating Missing Information for Dialogue Summarization
 
 **Author**: Steeve Huang (@khshuang, [khhuang3@illinois.edu](mailto:khhuang3@illinois.edu)).
 
